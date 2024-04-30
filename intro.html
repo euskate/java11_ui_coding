@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가산동 소개 메인</title>
+    <title>가산동 소개</title>
     <!-- 메타포 -->
     <!-- 바로가기 또는 파비콘 -->
     <!-- 오픈그래프 -->
     <!-- 폰트 로딩 -->
     <!-- 외부 스타일 로딩 -->
     <!-- 외부 js 라이브러리 로딩 -->
+    <link rel="stylesheet" type="text/css" href="http://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.css">
+    <script type="text/javascript" src="http://dmaps.daum.net/map_js_init/v3.js"></script>
+	<script type="text/javascript" src="http://s1.daumcdn.net/svc/original/U03/cssjs/jquery/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="http://s1.daumcdn.net/svc/original/U0301/cssjs/JSON-js/fc535e9cc8/json2.min.js"></script>
     <link rel="stylesheet" href="normalize2.css">
     <link rel="stylesheet" href="common.css">
-    <style>
-    .item_lst { height: 320px; overflow: hidden; }
+    <link rel="stylesheet" href="sub_common.css">
+
+	<style>
+        body { background:white; }
     </style>
 </head>
-<body>
+<!--[if gte IE 10]><!-->
+<body class="web guide" data-page_section="web" data-page_type="guide" data-title="Daum 지도 Web API 가이드">
+    <!--<![endif]-->
+    <!--[if lte IE 7]>
+    <body class="very_low web guide" data-page_section="web" data-page_type="guide" data-title="Daum 지도 Web API 가이드">
+    <![endif]-->
+    <!--[if lte IE 9]>
+    <body class="low web guide" data-page_section="web" data-page_type="guide" data-title="Daum 지도 Web API 가이드">
+    <![endif]-->
     <header id="hd" class="clr-fix">
         <div class="hd_wrap">
             <a href="" class="logo"><img src="https://placehold.it/60x60/333" alt="로고"></a>
@@ -70,31 +84,17 @@
     </header>
     <main id="contents" class="clr-fix">
         <figure id="vs">
-            <ul class="img_box">
-                <li class="item1">
-                    <img src="https://placehold.it/1800x300/369" alt="배너1">
-                    <a href="" class="more_btn">더 보기</a>
-                </li>
-                <li class="item2">
-                    <img src="https://placehold.it/1800x300/936" alt="배너2">
-                    <a href="" class="more_btn">더 보기</a>
-                </li>
-                <li class="item3">
-                    <img src="https://placehold.it/1800x300/693" alt="배너3">
-                    <a href="" class="more_btn">더 보기</a>
-                </li>
-                <li class="item4">
-                    <img src="https://placehold.it/1800x300/963" alt="배너4">
-                    <a href="" class="more_btn">더 보기</a>
-                </li>
-            </ul>
+            <img src="https://placehold.it/1800x300/369" alt="배너1">
         </figure>
-        <script src="jquery-1.12.3.js"></script>
-        <script src="main.js"></script>
         <section class="page" id="page1">
-            <h2 class="page_title">페이지 제목1 - 썸네일 목록</h2>
+            <div class="breadcrumb">
+                <p>
+                    <a href="">홈</a><a href="">지역소개</a><span>지명 유래</span>
+                </p>
+            </div>
+            <hr>
+            <h2 class="page_title">지명 유래</h2>
             <div class="page_wrap">
-                <!-- ul.item_lst>li*10>a>img.thumb+h3.item_tit{아이템 제목$}+p.item_com{아이템 설명$} -->
                 <ul class="item_lst clr-fix">
                     <li>
                         <a href="">
@@ -190,116 +190,13 @@
             </div>
         </section>
         <section class="page" id="page2">
-            <h2 class="page_title">페이지 제목2 - 테이블</h2>
-            <div class="page_wrap">
-                <a href="" class="detail">+</a>
-                <table class="tb1">
-                    <thead>
-                        <tr>
-                            <th>필드명1</th>
-                            <th>필드명2</th>
-                            <th>필드명3</th>
-                            <th>필드명4</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>컬럼데이터1</td>
-                            <td>컬럼데이터2</td>
-                            <td>컬럼데이터3</td>
-                            <td>컬럼데이터4</td>
-                        </tr>
-                        <tr>
-                            <td>컬럼데이터1</td>
-                            <td>컬럼데이터2</td>
-                            <td>컬럼데이터3</td>
-                            <td>컬럼데이터4</td>
-                        </tr>
-                        <tr>
-                            <td>컬럼데이터1</td>
-                            <td>컬럼데이터2</td>
-                            <td>컬럼데이터3</td>
-                            <td>컬럼데이터4</td>
-                        </tr>
-                        <tr>
-                            <td>컬럼데이터1</td>
-                            <td>컬럼데이터2</td>
-                            <td>컬럼데이터3</td>
-                            <td>컬럼데이터4</td>
-                        </tr>
-                        <tr>
-                            <td>컬럼데이터1</td>
-                            <td>컬럼데이터2</td>
-                            <td>컬럼데이터3</td>
-                            <td>컬럼데이터4</td>
-                        </tr>
-                        <tr>
-                            <td>컬럼데이터1</td>
-                            <td>컬럼데이터2</td>
-                            <td>컬럼데이터3</td>
-                            <td>컬럼데이터4</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="breadcrumb">
+                <p>
+                    <a href="">홈</a><a href="">지역소개</a><span>지역 특징 및 시설안내</span>
+                </p>
             </div>
-        </section>
-        <section class="page" id="page3">
-            <h2 class="page_title">페이지 제목3 - 아이콘 목록</h2>
-            <div class="page_wrap">
-                <ul class="icon_lst">
-                    <li>
-                        <a href="">
-                            <div class="icon_fr"><img src="boxIcon1.png" alt="아이콘1"></div>
-                            <h3 class="icon_tit">아이콘 제목</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="icon_fr"><img src="boxIcon2.png" alt="아이콘2"></div>
-                            <h3 class="icon_tit">아이콘 제목</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="icon_fr"><img src="boxIcon3.png" alt="아이콘3"></div>
-                            <h3 class="icon_tit">아이콘 제목</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="icon_fr"><img src="boxIcon4.png" alt="아이콘4"></div>
-                            <h3 class="icon_tit">아이콘 제목</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="icon_fr"><img src="boxIcon5.png" alt="아이콘5"></div>
-                            <h3 class="icon_tit">아이콘 제목</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="icon_fr"><img src="boxIcon6.png" alt="아이콘6"></div>
-                            <h3 class="icon_tit">아이콘 제목</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="icon_fr"><img src="boxIcon7.png" alt="아이콘7"></div>
-                            <h3 class="icon_tit">아이콘 제목</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="icon_fr"><img src="boxIcon8.png" alt="아이콘8"></div>
-                            <h3 class="icon_tit">아이콘 제목</h3>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="page" id="page4">
-            <h2 class="page_title">페이지 제목4 - 정적 그리드</h2>
+            <hr>
+            <h2 class="page_title">지역 특징 및 시설안내</h2>
             <div class="page_wrap">
                 <ul class="grid clr-fix">
                     <li class="col4">
@@ -344,80 +241,110 @@
                 </ul>
             </div>
         </section>
-        <section class="page" id="page5">
-            <h2 class="page_title">페이지 제목5 - 동적 그리드</h2>
-
-            <ul class="grid2 clr-fix">
-                <li class="can4">
-                    <div class="box">col-4</div>
-                </li>
-                <li class="can4">
-                    <div class="box">col-4</div>
-                </li>
-                <li class="can4 last">
-                    <div class="box">col-4</div>
-                </li>
-                <li class="can3">
-                    <div class="box">col-3</div>
-                </li>
-                <li class="can3">
-                    <div class="box">col-3</div>
-                </li>
-                <li class="can3">
-                    <div class="box">col-3</div>
-                </li>
-                <li class="can3 last">
-                    <div class="box">col-3</div>
-                </li>
-                <li class="can5">
-                    <div class="box">col-5</div>
-                </li>
-                <li class="can3">
-                    <div class="box">col-3</div>
-                </li>
-                <li class="can4 last">
-                    <div class="box">col-4</div>
-                </li>
-                <li class="can6">
-                    <div class="box">col-6</div>
-                </li>
-                <li class="can6 last">
-                    <div class="box">col-6</div>
-                </li>
-                <li class="can12">
-                    <div class="box">col-12</div>
-                </li>
-            </ul>
-
+        <section class="page" id="page3">
+            <div class="breadcrumb">
+                <p>
+                    <a href="">홈</a><a href="">지역소개</a><span>연혁</span>
+                </p>
+            </div>
+            <hr>
+            <h2 class="page_title">연혁</h2>
+            <div class="page_wrap">
+                <ul class="grid2 clr-fix">
+                    <li class="can4">
+                        <div class="box">col-4</div>
+                    </li>
+                    <li class="can4">
+                        <div class="box">col-4</div>
+                    </li>
+                    <li class="can4 last">
+                        <div class="box">col-4</div>
+                    </li>
+                    <li class="can3">
+                        <div class="box">col-3</div>
+                    </li>
+                    <li class="can3">
+                        <div class="box">col-3</div>
+                    </li>
+                    <li class="can3">
+                        <div class="box">col-3</div>
+                    </li>
+                    <li class="can3 last">
+                        <div class="box">col-3</div>
+                    </li>
+                    <li class="can5">
+                        <div class="box">col-5</div>
+                    </li>
+                    <li class="can3">
+                        <div class="box">col-3</div>
+                    </li>
+                    <li class="can4 last">
+                        <div class="box">col-4</div>
+                    </li>
+                    <li class="can6">
+                        <div class="box">col-6</div>
+                    </li>
+                    <li class="can6 last">
+                        <div class="box">col-6</div>
+                    </li>
+                    <li class="can12">
+                        <div class="box">col-12</div>
+                    </li>
+                </ul>    
+            </div>
         </section>
-
-        <section class="page" id="page6">
-            <h2 class="page_title">페이지 제목6 - 절대 좌표 그리드</h2>
-
-            <ul class="grid3 clr-fix">
-                <li id="item1" class="box1">
-                    <div class="box">item1</div>
-                </li>
-                <li id="item2" class="box1">
-                    <div class="box">item2</div>
-                </li>
-                <li id="item3" class="box2">
-                    <div class="box">item3</div>
-                </li>
-                <li id="item4" class="box2">
-                    <div class="box">item4</div>
-                </li>
-                <li id="item5" class="box2">
-                    <div class="box">item5</div>
-                </li>
-                <li id="item6" class="box2">
-                    <div class="box">item6</div>
-                </li>
-                <li id="item7" class="box2">
-                    <div class="box">item7</div>
-                </li>
-            </ul>
-
+        <section class="page" id="page4">
+            <div class="breadcrumb">
+                <p>
+                    <a href="">홈</a><a href="">지역소개</a><span>오시는 길</span>
+                </p>
+            </div>
+            <hr>
+            <h2 class="page_title">오시는 길</h2>
+            <div class="page_wrap clr-fix" style="position:relative;padding-bottom:90px;">
+                <div id="map" style="margin-top:50px; width:800px;height:600px; background:white; ">
+                </div>
+                <script>
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                    mapOption = { 
+                        center: new daum.maps.LatLng(37.5679212,126.9830358), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };
+                
+                var map = new daum.maps.Map(mapContainer, mapOption);
+                
+                // 마커가 표시될 위치입니다 
+                var markerPosition  = new daum.maps.LatLng(37.5679212,126.9830358); 
+                
+                // 마커를 생성합니다
+                var marker = new daum.maps.Marker({
+                    position: markerPosition
+                });
+                
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+                
+                var iwContent = '<div style="padding:5px;">현재위치 <br><a href="" style="color:blue" target="_blank"></a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                    iwPosition = new daum.maps.LatLng(37.5679212,126.9830358); //인포윈도우 표시 위치입니다
+                
+                // 인포윈도우를 생성합니다
+                var infowindow = new daum.maps.InfoWindow({
+                    position : iwPosition, 
+                    content : iwContent 
+                });
+                  
+                // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+                infowindow.open(map, marker);
+                </script>
+                <script type="text/javascript" src="http://m1.daumcdn.net/tiara/js/td.min.js"></script>
+                <script type="text/javascript">
+                var _tiq = 'undefined' !== typeof _tiq ? _tiq : [];
+                    window._tiq = _tiq;
+                    _tiq.push(['__trackPageview']);
+                </script>
+                <script type="text/javascript" src="http://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.js">
+                </script>
+            </div>
         </section>
     </main>
 
@@ -444,5 +371,27 @@
             </p>
         </div>
     </footer>
+    <script>
+    var urlParams = new URL(location.href).searchParams;
+    var loc = urlParams.get('data');
+    console.log(loc);
+
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "none";
+    document.getElementById("page3").style.display = "none";
+    document.getElementById("page4").style.display = "none";
+
+    if(loc=="local1"){
+        document.getElementById("page1").style.display = "block";
+    } else if(loc=="local2"){
+        document.getElementById("page2").style.display = "block";
+    } else if(loc=="local3"){
+        document.getElementById("page3").style.display = "block";
+    } else if(loc=="local4"){
+        document.getElementById("page4").style.display = "block";
+    } else {
+        document.getElementById("page1").style.display = "block";
+    } 
+    </script>
 </body>
 </html>
