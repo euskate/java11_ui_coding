@@ -2616,19 +2616,19 @@ rel="stylesheet">
 </html>
 ```
 
-![CSS 버튼 만들기](button.html)
+[CSS 버튼 만들기](button.html)
 
-![CSS 도형 만들기](shape01.html)
+[CSS 도형 만들기](shape01.html)
 
-![CSS 풍선 도움말 만들기](tooltip.html)
+[CSS 풍선 도움말 만들기](tooltip.html)
 
-![CSS 테이블 만들기](table.html)
+[CSS 테이블 만들기](table.html)
 
 <br><br>
 
 ## 1-2. UI 구현 프로세스 검토
 
-[UI구현 프로세스](design_process001.png)
+![UI구현 프로세스](design_process001.png)
 
 | 유형 | 설명 |
 |-----------|--------------------------------------------------------------------|
@@ -2687,7 +2687,7 @@ rel="stylesheet">
 - 비기능적 요구사항 확인 : UI 기능 수행 중 확보해야 할 성능, 보안 등 제약사항에 대해 작성되었는지 확인한다. 
 - 품질 요구사항 확인 : UI를 사용함에 있어 사용자 관점의 품질 요구사항이 작성되었는지 확인한다.
 
-[UI 구현 요구사항 분석](design_process002.png)
+![UI 구현 요구사항 분석](design_process002.png)
 
 <br>
 
@@ -2704,7 +2704,7 @@ rel="stylesheet">
 
 ## 2-2. UI 구현 표준안 작성
 
-[UI 구현 표준안 작성](design_process003.png)
+![UI 구현 표준안 작성](design_process003.png)
 
 <br><br>
 
