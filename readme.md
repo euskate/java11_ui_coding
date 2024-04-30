@@ -80,11 +80,11 @@
 UI 에서 색상이란, 사용자에게 디자인을 직관적으로 이해시킬 수 있는 강력한 시각 요소입니다. 색상이 잘못 사용된 디자인은 사용자에게 혼란을 주고 서비스의 집중도를 떨어트립니다. UI에서 색상만 제대로 사용해도 사용자를 원하는 방향으로 이끌어 줄 수 있습니다.
 ```
 
-![컬러 피커](https://htmlcolors.com/color-picker)
+[컬러 피커](https://htmlcolors.com/color-picker)
 
-![그라디언트 컬러](https://www.colorzilla.com/ko/gradient-editor/)
+[그라디언트 컬러](https://www.colorzilla.com/ko/gradient-editor/)
 
-![이미지 컬러 추출](https://color.adobe.com/ko/create/image)
+[이미지 컬러 추출](https://color.adobe.com/ko/create/image)
 
 <br>
 
